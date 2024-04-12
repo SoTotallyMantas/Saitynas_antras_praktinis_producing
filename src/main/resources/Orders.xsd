@@ -1,0 +1,77 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://eif.viko.lt/mantas/springsoap/gen"
+           targetNamespace="http://eif.viko.lt/mantas/springsoap/gen" elementFormDefault="qualified">
+
+
+    <xs:element name="getClientOrdersRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="firstName" type="xs:string"/>
+                <xs:element name="lastName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getClientOrdersResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderList" type="OrderList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="id" type="xs:string"/>
+    <xs:element name="FirstName" type="xs:string"/>
+    <xs:element name="Lastname" type="xs:string"/>
+    <xs:element name="Phone_Number" type="xs:string"/>
+    <xs:element name="License_Plate" type="xs:string"/>
+    <xs:element name="Work_Number" type="xs:string"/>
+    <xs:element name="address" type="xs:string"/>
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id"/>
+                <xs:element ref="FirstName"/>
+                <xs:element ref="Lastname"/>
+                <xs:element ref="Phone_Number"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="driver">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id"/>
+                <xs:element ref="FirstName"/>
+                <xs:element ref="Lastname"/>
+                <xs:element ref="Phone_Number"/>
+                <xs:element ref="License_Plate"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="dispatch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id"/>
+                <xs:element ref="FirstName"/>
+                <xs:element ref="Lastname"/>
+                <xs:element ref="Phone_Number"/>
+                <xs:element ref="Work_Number"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Order">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="address"/>
+                <xs:element ref="client"/>
+                <xs:element ref="driver"/>
+                <xs:element ref="dispatch"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+        <xs:complexType name="OrderList">
+            <xs:sequence>
+                <xs:element ref="Order" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+</xs:schema>
