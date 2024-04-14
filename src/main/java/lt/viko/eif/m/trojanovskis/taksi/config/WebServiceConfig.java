@@ -20,17 +20,17 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     }
 
     @Bean(name = "orders")
-    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
+    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema ordersSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("OrdersPort");
         wsdl11Definition.setLocationUri("/ws");
         wsdl11Definition.setTargetNamespace("http://eif.viko.lt/mantas/springsoap/gen");
-        wsdl11Definition.setSchema(countriesSchema);
+        wsdl11Definition.setSchema(ordersSchema);
         return wsdl11Definition;
     }
 
     @Bean
-    public XsdSchema countriesSchema() {
+    public XsdSchema ordersSchema() {
         return new SimpleXsdSchema(new ClassPathResource("Orders.xsd"));
     }
 }

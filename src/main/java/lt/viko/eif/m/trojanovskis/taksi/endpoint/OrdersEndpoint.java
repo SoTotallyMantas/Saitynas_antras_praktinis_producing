@@ -1,5 +1,6 @@
 package lt.viko.eif.m.trojanovskis.taksi.endpoint;
 
+import lt.viko.eif.m.trojanovskis.taksi.Service.OrderService;
 import lt.viko.eif.mantas.springsoap.gen.GetClientOrdersRequest;
 import lt.viko.eif.mantas.springsoap.gen.GetClientOrdersResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +15,15 @@ public class OrdersEndpoint {
     private OrderService orderService;
 
     @Autowired
-    public OrdersEndpoint(OrderService countryRepository) {
-        this.OrderService = countryRepository;
+    public OrdersEndpoint(OrderService ordersRepository) {
+        this.orderService = ordersRepository;
     }
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getOrderRequest")
     @ResponsePayload
     public GetClientOrdersResponse getOrder(@RequestPayload GetClientOrdersRequest request) {
         GetClientOrdersResponse response = new GetClientOrdersResponse();
-        response.setOrderList(OrderService.findOrders(request.getFirstName(),request.getLastName()));
+        response.setOrderList(orderService.findOrders(request.getFirstName(),request.getLastName()));
 
         return response;
     }
