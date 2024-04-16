@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0e3008-deaf-4971-9105-a0f155cb0d71" name="Changes" comment="Antras praktinis darbas SOAP">
+    <list default="true" id="cc0e3008-deaf-4971-9105-a0f155cb0d71" name="Changes" comment="Fixed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/AbstractUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Dispatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/GenericList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Database/OrdersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Database/OrdersRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/config/WebServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/config/WebServiceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/endpoint/OrdersEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/endpoint/OrdersEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Orders.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Orders.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,35 +48,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Antras_Praktinis_Darbas [org.codehaus.mojo:jaxb2-maven-plugin:3.1.0:xjc].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/Antras_Praktinis_Darbas&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "Maven.Antras_Praktinis_Darbas [org.codehaus.mojo:jaxb2-maven-plugin:3.1.0:xjc].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/Antras_Praktinis_Darbas/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\Antras_Praktinis_Darbas\src\main\java\lt\viko\eif\m\trojanovskis\taksi\model" />
       <recent name="C:\Users\Dell\IdeaProjects\Antras_Praktinis_Darbas" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\Antras_Praktinis_Darbas\src\main\java\lt\viko\eif\m\trojanovskis\taksi" />
       <recent name="C:\Users\Dell\IdeaProjects\Antras_Praktinis_Darbas\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lt.viko.eif.m.trojanovskis.taksi.model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -113,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712143643787</updated>
       <workItem from="1712143645004" duration="12499000" />
-      <workItem from="1712935622466" duration="4166000" />
+      <workItem from="1712935622466" duration="23548000" />
     </task>
     <task id="LOCAL-00001" summary="Antras praktinis darbas SOAP">
       <option name="closed" value="true" />
@@ -123,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712935657088</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed">
+      <option name="closed" value="true" />
+      <created>1713122304238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713122304238</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed">
+      <option name="closed" value="true" />
+      <created>1713122463839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713122463839</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +160,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Antras praktinis darbas SOAP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Antras praktinis darbas SOAP" />
+    <MESSAGE value="Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/endpoint/OrdersEndpoint.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/endpoint/OrdersEndpoint.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="lt.viko.eif.mantas.springsoap.gen.OrderList" memberName="order" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

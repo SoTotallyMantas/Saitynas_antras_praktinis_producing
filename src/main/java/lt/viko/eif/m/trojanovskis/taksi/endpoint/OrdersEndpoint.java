@@ -11,7 +11,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 @Endpoint
 public class OrdersEndpoint {
-    private static final String NAMESPACE_URI = "http://eif.viko.lt/mantas/springsoap/gen";
+    private static final String NAMESPACE_URI = "http://lt.viko.eif/mantas/springsoap/gen";
     private OrderService orderService;
 
     @Autowired
@@ -19,12 +19,11 @@ public class OrdersEndpoint {
         this.orderService = ordersRepository;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getOrderRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getClientOrdersRequest")
     @ResponsePayload
     public GetClientOrdersResponse getOrder(@RequestPayload GetClientOrdersRequest request) {
         GetClientOrdersResponse response = new GetClientOrdersResponse();
         response.setOrderList(orderService.findOrders(request.getFirstName(),request.getLastName()));
-
         return response;
     }
 
