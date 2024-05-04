@@ -18,6 +18,69 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="getDispatchNumberOrdersRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Work_Number"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDispatchNumberOrdersResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderList" type="OrderList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDriverPlateOrdersRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="License_Plate"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDriverPlateOrdersResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderList" type="OrderList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDriverOrdersRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="FirstName" type="xs:string"/>
+                <xs:element name="LastName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDriverOrdersResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderList" type="OrderList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDispatchOrdersRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="FirstName" type="xs:string"/>
+                <xs:element name="LastName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDispatchOrdersResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OrderList" type="OrderList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 
     <xs:element name="id" type="xs:string"/>
     <xs:element name="FirstName" type="xs:string"/>

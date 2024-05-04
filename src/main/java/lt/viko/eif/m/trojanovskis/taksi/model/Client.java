@@ -1,6 +1,5 @@
 package lt.viko.eif.m.trojanovskis.taksi.model;
 
-import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.xml.bind.annotation.*;

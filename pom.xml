@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>lt.viko.eif.m.trojanovskis.taksi</groupId>
-    <artifactId>Antras_Praktinis_Darbas</artifactId>
+    <artifactId>soap-producing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Antras_Praktinis_Darbas</name>
     <description>Springboot</description>

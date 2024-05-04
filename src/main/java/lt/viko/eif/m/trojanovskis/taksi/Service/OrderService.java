@@ -3,17 +3,11 @@ package lt.viko.eif.m.trojanovskis.taksi.Service;
 import lt.viko.eif.m.trojanovskis.taksi.Database.OrdersRepository;
 import lt.viko.eif.m.trojanovskis.taksi.model.Order;
 import lt.viko.eif.mantas.springsoap.gen.OrderList;
-import org.modelmapper.PropertyMap;
-import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.modelmapper.ModelMapper;
 
 
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,6 +18,7 @@ public class OrderService {
 
              @Autowired
             private ModelMapper modelMapper;
+
 
    public List<Order> list() {
         return ordersRepository.findAll();
@@ -40,10 +35,36 @@ public class OrderService {
             return orderList;
     }
 
-    public OrderList findOrders(String firstName, String lastName) {
+    public OrderList findClientOrders(String firstName, String lastName) {
         List<Order> filteredOrders = this.list().stream()
                 .filter(order -> order.getClient().getFirstname().equals(firstName) &&
                         order.getClient().getLastname().equals(lastName))
+                .collect(Collectors.toList());
+        return convertToDto(filteredOrders);
+    }
+    public OrderList findDispatchOrders(String firstName, String lastName) {
+        List<Order> filteredOrders = this.list().stream()
+                .filter(order -> order.getDispatch().getFirstname().equals(firstName) &&
+                        order.getDispatch().getLastname().equals(lastName))
+                .collect(Collectors.toList());
+        return convertToDto(filteredOrders);
+    }
+    public OrderList findDriverOrders(String firstName, String lastName) {
+        List<Order> filteredOrders = this.list().stream()
+                .filter(order -> order.getDriver().getFirstname().equals(firstName) &&
+                        order.getDriver().getLastname().equals(lastName))
+                .collect(Collectors.toList());
+        return convertToDto(filteredOrders);
+    }
+    public OrderList findDriverPlateOrders(String LicensePlate) {
+        List<Order> filteredOrders = this.list().stream()
+                .filter(order -> order.getDriver().getLicenseplate().equals(LicensePlate))
+                .collect(Collectors.toList());
+        return convertToDto(filteredOrders);
+    }
+    public OrderList findDispatchNumberOrders(String WorkNumber) {
+        List<Order> filteredOrders = this.list().stream()
+                .filter(order -> order.getDispatch().getWorknumber().equals(WorkNumber))
                 .collect(Collectors.toList());
         return convertToDto(filteredOrders);
     }
