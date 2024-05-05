@@ -27,6 +27,12 @@ public class PdfTransform {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Method that converts XML file to PDF
+     * @throws IOException
+     * @throws JAXBException
+     */
     public static void convertToPDF() throws IOException, JAXBException {
 
 

@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0e3008-deaf-4971-9105-a0f155cb0d71" name="Changes" comment="Finished">
-      <change afterPath="$PROJECT_DIR$/OrderXMLHtML.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderXSLHTML.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/PdfTransform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/xmltohtml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orders1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrdersFop.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/OrdersFop.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Database/OrdersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Database/OrdersRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/PdfTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/PdfTransform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/xmltohtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/xmltohtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/config/WebServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/config/WebServiceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/endpoint/OrdersEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/endpoint/OrdersEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Dispatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Dispatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/model/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/printToPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/printToPDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Orders.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Orders.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +183,8 @@
       <workItem from="1713964760004" duration="2075000" />
       <workItem from="1714257084870" duration="13633000" />
       <workItem from="1714389235175" duration="9671000" />
-      <workItem from="1714650299092" duration="9893000" />
+      <workItem from="1714650299092" duration="10985000" />
+      <workItem from="1714933744615" duration="1298000" />
     </task>
     <task id="LOCAL-00001" summary="Antras praktinis darbas SOAP">
       <option name="closed" value="true" />
@@ -226,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713272843543</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished">
+      <option name="closed" value="true" />
+      <created>1714841390797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714841390797</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finished">
+      <option name="closed" value="true" />
+      <created>1714841996234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714841996234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

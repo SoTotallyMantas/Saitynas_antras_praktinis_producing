@@ -20,6 +20,11 @@ public class xmltohtml {
             e.printStackTrace();
         }
     }
+    /**
+     * Method that converts XML file to HTML
+     * @throws IOException
+     * @throws TransformerException
+     */
     public static void convertToHtml() throws IOException, TransformerException {
 
         StreamSource xmlSource = new StreamSource(new File("OrderXMLHtML.xml"));
